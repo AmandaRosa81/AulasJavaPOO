@@ -34,5 +34,7 @@ public class Main {
         pesso1.comer("Um fraguinho da libaaa");
         pesso2.falar("Amei debulhar o franguinho kkkkk");
         pesso2.comer("um franguinho na libaaa");
+
+        Pessoa pessoa3 = new Pessoa("Sofia", 13);
     }
 }
