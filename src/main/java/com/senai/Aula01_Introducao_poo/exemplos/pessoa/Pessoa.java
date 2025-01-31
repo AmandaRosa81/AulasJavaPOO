@@ -4,13 +4,28 @@ public class Pessoa {
     String nome;
     int idade;
     float altura;
-    String endereco;
+    Endereco endereco;
+
+    public Pessoa(String nome, int idade, float altura, Endereco endereco) {
+        this.nome = nome;
+        this.idade = idade;
+        this.altura = altura;
+        this.endereco = endereco;
+    }
 
     public void falar(String frase){
-        System.out.println(frase);
+        System.out.println(nome + " falou: " + frase);
     }
     public void comer(String alimento){
-        System.out.println("Hoje eu comi: "+ alimento);
+        System.out.println(nome + " comeu: " + alimento);
+    }
+
+    //tostring
+
+    @Override
+    public String toString() {
+        return "Meu nome é " + this.nome +" tenho " + this.idade +
+                " anos, e " + this.altura + " de altura e atualmente moro no endereço " + this.endereco;
 
     }
 }
