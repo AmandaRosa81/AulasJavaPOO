@@ -6,6 +6,7 @@ public class Pessoa {
     float altura;
     Endereco endereco;
 
+    //Construtor
     public Pessoa(String nome, int idade, float altura, Endereco endereco) {
         this.nome = nome;
         this.idade = idade;
@@ -13,6 +14,7 @@ public class Pessoa {
         this.endereco = endereco;
     }
 
+    //
     public Pessoa(String nome, int idade) {
         this.nome = nome;
         this.idade = idade;
@@ -25,7 +27,7 @@ public class Pessoa {
         System.out.println(nome + " comeu: " + alimento);
     }
 
-    //tostring
+    //ToString
 
     @Override
     public String toString() {

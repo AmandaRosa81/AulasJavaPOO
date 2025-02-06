@@ -1,5 +1,7 @@
 package com.senai.Aula01_Introducao_poo.exemplos.pessoa;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -35,6 +37,31 @@ public class Main {
         pesso2.falar("Amei debulhar o franguinho kkkkk");
         pesso2.comer("um franguinho na libaaa");
 
-        Pessoa pessoa3 = new Pessoa("Sofia", 13);
+
+        Scanner scanner = new Scanner(System.in);
+
+        String[] etiquetas ={"Nome: ", "Idade: ", "Altura: ", "Endereço:\n\trua:",
+        "\tnumero: ", "\tbairro: ", "\tcidade: ", "\testado: "};
+        String[] dados = new String[etiquetas.length];
+
+        System.out.println("Preencha as informações a seguir: ");
+        for (int i = 0; i < etiquetas.length; i++) {
+            System.out.println(etiquetas[i]);
+            dados[i] = scanner.nextLine();
+        }
+
+        Pessoa pessoa3 = new Pessoa (
+                dados [0],
+                Integer.parseInt(dados[1]),
+                Float.parseFloat(dados[2]),
+                new Endereco(
+                        dados[3],
+                        Integer.parseInt(dados[4]),
+                        dados[5],
+                        dados[6],
+                        dados[7]
+                )
+        );
+        System.out.println(pessoa3);
     }
 }

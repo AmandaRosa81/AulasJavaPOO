@@ -7,6 +7,7 @@ public class Endereco {
     String cidade;
     String estado;
 
+    //Construtor
     public Endereco(String rua, int numero, String bairro, String cidade, String estado) {
         this.rua = rua;
         this.numero = numero;
@@ -15,6 +16,7 @@ public class Endereco {
         this.estado = estado;
     }
 
+    //ToString
     @Override
     public String toString() {
         return "rua " + rua + "," + numero + "," + bairro + "," + cidade + "-" + estado;
