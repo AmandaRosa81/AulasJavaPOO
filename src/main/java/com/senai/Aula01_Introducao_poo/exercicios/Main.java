@@ -1,5 +1,7 @@
 package com.senai.Aula01_Introducao_poo.exercicios;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Produto produto1 = new Produto(
@@ -10,7 +12,7 @@ public class Main {
         Produto produto2 = new Produto(
                 "Farinha",
                 15,
-                20
+                25
         );
 
         System.out.println(produto1);
@@ -18,7 +20,11 @@ public class Main {
         produto1.exibirDetalhes();
         produto2.exibirDetalhes();
 
-        produto1.atualizaEstoque(20 - produto1.quantidade);
+        produto1.atualizaEstoque(5);
+        produto2.atualizaEstoque(8);
+
+     produto1.calcularValorEstoque(25);
+     produto2.calcularValorEstoque(33);
 
     }
 

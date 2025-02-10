@@ -12,17 +12,16 @@ public class Produto {
     }
 
     public void exibirDetalhes(){
-        System.out.println("Você comprou: "+ quantidade + " pacotes de " + produto + " no valor de " + preco + " reais ");
+        System.out.println("Há no mercado Nikkey " + quantidade + " pacotes de " + produto + " no estoque,no valor de R$ " + preco + " a unidade.");
     }
 
     public void atualizaEstoque(int quantidadeNova){
-        System.out.println("O estoque inicial era "+ quantidade + " agora é " + quantidadeNova);
-        quantidade +=quantidadeNova;
+        System.out.println("O estoque inicial do(a) "+ produto + " era " + quantidade + " agora é " + (quantidade +=quantidadeNova));
 
     }
-    public void calcularValorEstoque(){
-        double valorDoEstoque = preco * quantidade;
-        System.out.println("O valor do estoque do "+ produto + " é " + valorDoEstoque);
+    public void calcularValorEstoque(int quantidadeNova){
+        double valorDoEstoque = preco * quantidadeNova;
+        System.out.println("O valor do estoque do(a) "+ produto + " é " + valorDoEstoque);
     }
 
     @Override
