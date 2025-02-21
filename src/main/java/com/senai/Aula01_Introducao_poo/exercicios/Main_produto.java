@@ -1,8 +1,6 @@
 package com.senai.Aula01_Introducao_poo.exercicios;
 
-import java.util.Scanner;
-
-public class Main {
+public class Main_produto {
     public static void main(String[] args) {
         Produto produto1 = new Produto(
                 "Macarrão",
