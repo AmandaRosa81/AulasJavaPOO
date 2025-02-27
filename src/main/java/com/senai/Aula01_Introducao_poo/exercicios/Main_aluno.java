@@ -12,46 +12,25 @@ public class Main_aluno {
         Aluno aluno2 = new Aluno(
                 "Bianca",
                 19,
-                10
+                4
         );
-        Aluno aluno = new Aluno(
+        Aluno aluno3 = new Aluno(
                 "Jamily",
                 20,
-                10
+                6
         );
 
-
-        Scanner scanner = new Scanner(System.in);
-        int opcao;
-
-        do {
-            System.out.println("\n---Gerenciamento de Alunos---");
-            System.out.println("\t1- Exibir informações");
-            System.out.println("\t2- Atualizar nota");
-            System.out.println("\t3- Verificar aprovação");
-            System.out.println("\t4- sair");
-            System.out.println("Escolha uma opção:");
-
-            opcao = scanner.nextInt();
-            scanner.nextLine();
-
-            switch (opcao) {
-                case 1:
-
-                    break;
-                case 2:
-
-                    break;
-                case 3:
-
-                    break;
-                case 4:
-                    System.out.println("Saindo...");
-                    break;
-            }
-        }while (opcao != 5);
-        System.out.println("Opção inválida");
-        scanner.close();
+        System.out.println(aluno1);
+        System.out.println("-----------------");
+        aluno1.exibirInformacoes();
+        aluno2.exibirInformacoes();
+        aluno3.exibirInformacoes();
+        System.out.println("-----------------");
+        aluno1.verificarAprovacao();
+        aluno2.verificarAprovacao();
+        aluno3.verificarAprovacao();
+        System.out.println("-----------------");
+        aluno2.atualizarNota(9);
 
     }
 }

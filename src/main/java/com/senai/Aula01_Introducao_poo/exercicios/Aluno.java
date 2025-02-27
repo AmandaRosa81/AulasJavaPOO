@@ -18,11 +18,11 @@ public class Aluno {
         System.out.println("Idade: "+ idade);
         System.out.println("Nota: "+ nota);
 
-        if (nota >= 6){
-            System.out.println("Situação: Aprovado");
-        }else {
-            System.out.println("Situação: Reprovado");
-        }
+       // if (nota >= 6){
+            //System.out.println("Situação: Aprovado");
+      //  }else {
+            //System.out.println("Situação: Reprovado");
+     //   }
     }
     public void atualizarNota(int novaNota){
         this.nota = novaNota;
