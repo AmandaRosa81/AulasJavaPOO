@@ -1,9 +1,9 @@
-package com.senai.Aula02_colecoes.exercícios;
+package com.senai.Aula02_colecoes.exercícios.ExercicioTarefs;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class Main_Tarefa {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ArrayList tarefa= new ArrayList();
@@ -24,16 +24,19 @@ public class Main {
                 case 1:
                     System.out.println("Qual tarefa deseja adicionar?");
                     scanner.nextLine();
-
+                    adicionarTarefa();
                     System.out.println("Nova tarefa adicionada!");
                     break;
                 case 2:
                     System.out.println("Aqui está todas as tarefas: ");
+                    listarTarefa();
                     break;
                 case 3:
+                    marcarConclusao();
                     System.out.println("Tarefa marcada com sucesso!");
                     break;
                 case 4:
+                    removerTarefa();
                     System.out.println("Tarefa removida com sucesso!");
                     break;
                 case 5:
@@ -42,8 +45,24 @@ public class Main {
             }
         }while (opcao != 6);
         System.out.println("Opção inválida");
-        scanner.close();
 
+    }
+
+    Scanner scanner = new Scanner(System.in);
+
+    public static  void adicionarTarefa(){
+        int tarefaAdiciona;
+        for (int tarefa = 0; tarefa <tarefaAdiciona; tarefa++) {
+            tarefa++tarefaAdiciona;
+        }
+    }
+    public static  void listarTarefa(){
+
+    }
+    public static  void marcarConclusao(){
+
+    }
+    public static  void removerTarefa(){
 
     }
 }
