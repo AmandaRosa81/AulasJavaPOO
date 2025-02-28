@@ -23,8 +23,7 @@ public class Main_Tarefa {
             switch (opcao) {
                 case 1:
                     System.out.println("Qual tarefa deseja adicionar?");
-                    scanner.nextLine();
-                    adicionarTarefa();
+
                     System.out.println("Nova tarefa adicionada!");
                     break;
                 case 2:
@@ -50,9 +49,9 @@ public class Main_Tarefa {
 
     Scanner scanner = new Scanner(System.in);
 
-    public static  void adicionarTarefa(int tarefaAdiciona){
-        for (int tarefa = 0; tarefa <tarefaAdiciona; tarefa++) {
-            int tarefaAdiciona1 = tarefaAdiciona;
+    public static  void adicionarTarefa(int tarefaAdicionada){
+        for (int tarefa = 0; tarefa <tarefaAdicionada; tarefa++) {
+            int adicionarTarefa = tarefaAdicionada;
         }
     }
     public static  void listarTarefa(){
