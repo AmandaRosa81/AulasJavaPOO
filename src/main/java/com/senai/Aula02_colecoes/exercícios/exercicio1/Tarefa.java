@@ -1,4 +1,4 @@
-package com.senai.Aula02_colecoes.exercícios.ExercicioTarefs;
+package com.senai.Aula02_colecoes.exercícios.exercicio1;
 
 public class
 Tarefa {

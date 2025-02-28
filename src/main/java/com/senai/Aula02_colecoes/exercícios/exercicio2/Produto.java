@@ -1,4 +1,4 @@
-package com.senai.Aula02_colecoes.exercícios.ExercicioProduto;
+package com.senai.Aula02_colecoes.exercícios.exercicio2;
 
 public class Produto {
     String nomeProduto;

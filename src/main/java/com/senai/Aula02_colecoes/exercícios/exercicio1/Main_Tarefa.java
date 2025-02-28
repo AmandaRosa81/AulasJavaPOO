@@ -1,4 +1,4 @@
-package com.senai.Aula02_colecoes.exercícios.ExercicioTarefs;
+package com.senai.Aula02_colecoes.exercícios.exercicio1;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -50,10 +50,9 @@ public class Main_Tarefa {
 
     Scanner scanner = new Scanner(System.in);
 
-    public static  void adicionarTarefa(){
-        int tarefaAdiciona;
+    public static  void adicionarTarefa(int tarefaAdiciona){
         for (int tarefa = 0; tarefa <tarefaAdiciona; tarefa++) {
-            tarefa++tarefaAdiciona;
+            int tarefaAdiciona1 = tarefaAdiciona;
         }
     }
     public static  void listarTarefa(){
