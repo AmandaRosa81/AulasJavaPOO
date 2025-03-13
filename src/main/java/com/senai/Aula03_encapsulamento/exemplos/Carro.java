@@ -1,4 +1,4 @@
-package com.senai.Aula03_encapsulamento.exemplo;
+package com.senai.Aula03_encapsulamento.exemplos;
 
 //Definição de classe Carro
 class Carro {

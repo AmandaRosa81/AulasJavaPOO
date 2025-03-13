@@ -4,7 +4,7 @@ public class Funcionarios {
     private String nome;
     private double salario;
     private String cargo;
-    private String[] listaDeCargos = {"Gerente", "Analista" , "Programador" };
+    private String[] listaDeCargos = {"Gerente", "Analista" , "Programador"};
 
     public Funcionarios(String nome, double salario, int idCargo) {
         if (!nome.isBlank()) { //isBlank serve para colocar como obrigátorio o preenchimento do dado
@@ -56,8 +56,8 @@ public class Funcionarios {
     public void aumentarSalario(int porcentagemAumento){
         if (porcentagemAumento>0) { //A porcentagem não pode ser menor que zero.
             this.salario += (salario * porcentagemAumento) / 100;
-            System.out.println("Aumento do salário do funcionário "+ nome + " realizado com sucesso.\nValor atualizado" +
-                    " do slário é "+ salario);
+            System.out.println("Aumento do salário do funcionário "+ nome + " realizado com sucesso.\nValor atualizado"
+                    + " do slário é "+ salario);
         }
     }
 

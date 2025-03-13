@@ -1,4 +1,4 @@
-package com.senai.Aula02_colecoes.exemplo;
+package com.senai.Aula02_colecoes.exemplos;
 
 public class Pessoa {
     String nome;
