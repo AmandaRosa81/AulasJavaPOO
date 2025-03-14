@@ -36,8 +36,8 @@ public class ContaBancaria {
     public boolean sacar(double valor){
         if (valor <= saldo && valor > 0){
             saldo -= valor;
-            System.out.println("Saque no valor de R$ "+ valor +" realizado com sucesso para a conta de "+ titular +
-                    ". Saldo atualizado: R$ "+ saldo);
+            System.out.println("Saque no valor de R$ "+ valor +" realizado com sucesso do(a) titular "+ titular +
+                    ".\nSaldo atualizado: R$ "+ saldo);
             return true;
         }else if (valor > saldo){
             System.out.println("Erro! Saldo insuficiente para realizar o saque!");

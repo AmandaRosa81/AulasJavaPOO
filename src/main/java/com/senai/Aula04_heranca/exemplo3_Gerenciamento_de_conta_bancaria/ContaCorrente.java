@@ -19,8 +19,8 @@ public class ContaCorrente extends ContaBancaria {
     public boolean sacar(double valor){
         if (valor <= (saldo+limite) && valor > 0){
             saldo -= valor;
-            System.out.println("Saque no valor de R$ "+ valor +" realizado com sucesso para a conta de "+ getTitular() +
-                    ". Saldo atualizado: R$ "+ saldo);
+            System.out.println("Saque no valor de R$ "+ valor +" realizado com sucesso do(a) titular "+ getTitular() +
+                    ".\nSaldo atualizado: R$ "+ saldo);
             return true;
         }else if (valor > saldo){
             System.out.println("Erro! Saldo insuficiente para realizar o saque!");
