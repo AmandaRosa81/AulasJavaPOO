@@ -1,4 +1,4 @@
-package com.senai.Aula04_herança.exemplo1_veiculos;
+package com.senai.Aula04_heranca.exemplo1_veiculos;
 
 public class Moto extends Veiculo {
     private boolean temPartidaEletrica;

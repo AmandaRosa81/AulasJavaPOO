@@ -1,4 +1,4 @@
-package com.senai.Aula04_herança.exemplo2_Sistema_de_cadastro_de_funcionarios;
+package com.senai.Aula04_heranca.exemplo2_Sistema_de_cadastro_de_funcionarios;
 
 public class Main {
     public static void main(String[] args) {
