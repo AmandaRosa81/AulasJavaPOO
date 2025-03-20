@@ -1,4 +1,4 @@
-package com.senai.Aula04_heranca.exercicios;
+package com.senai.Aula04_heranca.exercicio01;
 
 public class Alimento extends Produto{
     private String dataDeValidade;
@@ -14,6 +14,7 @@ public class Alimento extends Produto{
 
     public void setDataDeValidade(String dataDeValidade) {
         this.dataDeValidade = dataDeValidade;
+
     }
 
     public void exibirProduto(){

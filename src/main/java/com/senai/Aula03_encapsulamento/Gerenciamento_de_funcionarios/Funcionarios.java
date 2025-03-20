@@ -25,10 +25,9 @@ public class Funcionarios {
             // pois tem 3 opções de cargo.
             //Já no idCargo <= a lista ele vai estar indicando, que ele terá que começar desde 0 até o 2.
             this.cargo = listaDeCargos[idCargo-1];
-            System.out.println();
         }else {
             System.out.println("Cargo inválido!");
-            System.out.println("O campo cargo será atribuído  como 'Programador'");
+            System.out.println("O campo cargo será atribuído como 'Programador'");
             this.cargo = listaDeCargos[2];
         }
 

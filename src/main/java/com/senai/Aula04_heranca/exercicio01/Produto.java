@@ -1,4 +1,4 @@
-package com.senai.Aula04_heranca.exercicios;
+package com.senai.Aula04_heranca.exercicio01;
 
 public class Produto {
     //Atributos
@@ -10,7 +10,11 @@ public class Produto {
     public Produto(String nome, double valor, double quantidade) {
         this.nome = nome;
         this.valor = valor;
-        this.quantidade = quantidade;
+        if (quantidade > 0){
+            this.quantidade = quantidade;
+        }else {
+            System.out.println("A quantidade de produtos,não pode ser zero!");
+        }
     }
 
     //Metodos getter e setter, para o acesso aos dados de forma controlada.
@@ -40,12 +44,16 @@ public class Produto {
         return quantidade;
     }
 
-    public void setQuantidade(double quantidade) {//Regra de negócio: a quantidade não pode ser menor que 0.
-        if (quantidade >= 0){
+    public void setQuantidade(double quantidade) {//Regra de negócio: a quantidade não pode ser 0.
+        if (quantidade > 0){
             this.quantidade = quantidade;
         }else {
-            System.out.println("A quantidade de produtos,não pode ser menor que zero!");
+            System.out.println("A quantidade de produtos,não pode ser zero!");
         }
+    }
+
+    public void alerta(){
+        return;
     }
 
     public void exibirProduto(){
