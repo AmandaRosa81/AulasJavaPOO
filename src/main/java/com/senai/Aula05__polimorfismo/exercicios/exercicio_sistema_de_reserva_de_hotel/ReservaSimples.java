@@ -1,15 +1,17 @@
 package com.senai.Aula05__polimorfismo.exercicios.exercicio_sistema_de_reserva_de_hotel;
 
 public class ReservaSimples extends Reserva{
-    private double valorComum;
+    private int dias;
+    private double valorDiaria;
 
-    public ReservaSimples(String nome, double valorComum) {
+    public ReservaSimples(String nome, int dias, double valorDiaria) {
         super(nome);
-        this.valorComum = valorComum;
+        this.dias = dias;
+        this.valorDiaria = valorDiaria;
     }
 
     @Override
     public double calcularReserva() {
-        return valorComum;
+        return valorDiaria*dias;
     }
 }
