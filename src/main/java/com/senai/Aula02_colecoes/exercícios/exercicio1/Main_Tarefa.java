@@ -6,7 +6,8 @@ import java.util.Scanner;
 public class Main_Tarefa {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ArrayList tarefa= new ArrayList();
+        ArrayList <Tarefa> tarefa= new ArrayList<>();
+
         int opcao;
 
         do{
@@ -16,15 +17,18 @@ public class Main_Tarefa {
             System.out.println("\t3- Marcar tarefa como concluída");
             System.out.println("\t4- Remover tarefa");
             System.out.println("\t5- Sair");
+            System.out.println("----------------------------------");
             System.out.println("Escolha uma opção:");
 
             opcao = scanner.nextInt();
+            scanner.nextLine();
 
             switch (opcao) {
                 case 1:
                     System.out.println("Qual tarefa deseja adicionar?");
-
-                    System.out.println("Nova tarefa adicionada!");
+                    String nomeDaTarefa = scanner.nextLine();
+                    //tarefa.add(new Tarefa(nomeDaTarefa));
+                    System.out.println("Nova tarefa adicionada!\n");
                     break;
                 case 2:
                     System.out.println("Aqui está todas as tarefas: ");
@@ -49,7 +53,7 @@ public class Main_Tarefa {
 
     Scanner scanner = new Scanner(System.in);
 
-    public static  void adicionarTarefa(int tarefaAdicionada){
+    public static void adicionarTarefa(int tarefaAdicionada){
         for (int tarefa = 0; tarefa <tarefaAdicionada; tarefa++) {
             int adicionarTarefa = tarefaAdicionada;
         }

@@ -5,7 +5,7 @@ public class Main {
         Alimento alimento = new Alimento(
                 "Iorgute",
                 12,
-                0,
+                1,
                 "12/08/2027"
         );
 

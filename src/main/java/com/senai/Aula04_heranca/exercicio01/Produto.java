@@ -2,9 +2,9 @@ package com.senai.Aula04_heranca.exercicio01;
 
 public class Produto {
     //Atributos
-    private String nome;
-    private double valor;
-    private double quantidade;
+    protected String nome;
+    protected double valor;
+    protected double quantidade;
 
     //Construtor
     public Produto(String nome, double valor, double quantidade) {

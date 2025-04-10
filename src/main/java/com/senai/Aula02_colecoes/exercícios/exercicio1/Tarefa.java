@@ -1,13 +1,12 @@
 package com.senai.Aula02_colecoes.exercícios.exercicio1;
 
-public class
-Tarefa {
-    String nomeDaTarefa;
-    Boolean concluida;
+public class Tarefa {
+    protected String nomeDaTarefa;
+    protected Boolean concluida;
 
-    public Tarefa(String nomeDaTarefa, Boolean concluida) {
+    public Tarefa(String nomeDaTarefa) {
         this.nomeDaTarefa = nomeDaTarefa;
-        this.concluida = concluida;
+        this.concluida = false;
     }
 
     @Override
