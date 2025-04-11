@@ -12,14 +12,10 @@ public class PedidoOnline extends Pedido{
         return taxaDeEntrega;
     }
 
-    public void setTaxaDeEntrega(double valorPedido) {
-        double valorFinal = valorPedido + taxaDeEntrega;
-        this.taxaDeEntrega = taxaDeEntrega;
-    }
-
     @Override
     public void exibirPedido() {
-        System.out.printf("Número do pedido: %d  Valor total: R$%,.2f  Taxa de entrega: %d \n" +
-                getNumeroDoPedido(), getValorTotal(), getTaxaDeEntrega());
+        System.out.println("Número do pedido: " + getNumeroDoPedido() + " Valor total: " +
+                (getValorTotal() + taxaDeEntrega) + " Taxa de entrega: " + getTaxaDeEntrega());
+
     }
 }

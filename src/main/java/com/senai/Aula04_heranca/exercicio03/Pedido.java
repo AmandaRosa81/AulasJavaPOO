@@ -2,7 +2,7 @@ package com.senai.Aula04_heranca.exercicio03;
 
 public class Pedido {
     private int numeroDoPedido;
-    private double valorTotal;
+    protected double valorTotal;
 
     public Pedido(int numeroDoPedido, double valorTotal) {
         this.numeroDoPedido = numeroDoPedido;
@@ -18,6 +18,6 @@ public class Pedido {
     }
 
     public void exibirPedido(){
-        System.out.printf("Número do pedido: %d  Valor total: R$%,.2f\n");
+        System.out.printf("Número do pedido: " + getNumeroDoPedido() + "Valor total: " + getValorTotal());
     }
 }
