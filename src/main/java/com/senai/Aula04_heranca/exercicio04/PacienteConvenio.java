@@ -18,8 +18,9 @@ public class PacienteConvenio extends Paciente {
 
     @Override
     public void exibirDados() {
-        System.out.println("Nome do paciente: " + getNomeDoPaciente() + " idade do paciente: " + getIdade() +
-                "...Resultado: Paciente conveniado! Apto á usufruir dos benefícios do convênio! Valor de desconto: "
-                + getValorDesconto());
+        System.out.println("Nome do paciente: " + getNomeDoPaciente() + "\nIdade do paciente: " + getIdade() +
+                "\nCarregando dados..." + "\nResultado: Paciente conveniado!\nApto á usufruir dos benefícios do " +
+                "convênio!\nValor de desconto: "
+                + getValorDesconto() + "%");
     }
 }

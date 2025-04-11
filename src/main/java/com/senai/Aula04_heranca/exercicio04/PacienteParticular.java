@@ -18,6 +18,7 @@ public class PacienteParticular extends Paciente {
 
     @Override
     public void exibirDados() {
-        System.out.println();
+        System.out.println("Paciente: " +  getNomeDoPaciente() + "\nNão faz parte do convênio!\nFavor cobrar o valor " +
+                "da consulta sem desconto!\nValor:  " + getValorConsulta());
     }
 }

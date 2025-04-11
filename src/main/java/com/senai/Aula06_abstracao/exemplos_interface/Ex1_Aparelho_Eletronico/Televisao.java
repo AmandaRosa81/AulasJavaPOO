@@ -1,4 +1,4 @@
-package com.senai.Aula06_abstracao.exemplos_interface.Aparelho_Eletronico;
+package com.senai.Aula06_abstracao.exemplos_interface.Ex1_Aparelho_Eletronico;
 
 public class Televisao implements AparelhoEletronico{
 
