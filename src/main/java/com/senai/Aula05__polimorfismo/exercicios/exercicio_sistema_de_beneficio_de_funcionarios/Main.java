@@ -2,7 +2,7 @@ package com.senai.Aula05__polimorfismo.exercicios.exercicio_sistema_de_beneficio
 
 public class Main {
     public static void main(String[] args) {
-        double salario = 1500.00;
+        double salario = 1512.00;
 
         Beneficio valeAlimentacao = new valeAlimentacao("Amanda");
         Beneficio planoDeSaude = new PlanoDeSaude("Bianca");

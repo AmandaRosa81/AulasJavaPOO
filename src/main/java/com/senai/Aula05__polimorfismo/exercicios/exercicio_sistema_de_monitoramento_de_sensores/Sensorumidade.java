@@ -8,6 +8,10 @@ public class Sensorumidade extends Sensor{
         this.umidade = umidade;
     }
 
+    public double getUmidade() {
+        return umidade;
+    }
+
     public void setUmidade(double umidade) {
         this.umidade = umidade;
     }
