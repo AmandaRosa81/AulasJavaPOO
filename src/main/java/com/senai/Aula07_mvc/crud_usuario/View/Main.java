@@ -48,23 +48,27 @@ public class Main {
                         System.out.println("Setor: ");
                         String setor = scanner.nextLine();
                         Operador operador = new Operador(nome, id, setor);
-                    if (opController.cadastrarOperador(operador)){
-                    System.out.println("Cadastrado com sucesso!");
-                    }else {
-                        System.out.println("Não foi possível cadastrar!");
-                    }
+                        if (opController.cadastrarOperador(operador)){
+                            System.out.println("Cadastrado com sucesso!");
+                        }else {
+                            System.out.println("Não foi possível cadastrar!");
+                        }
                     } else if (escolhaTipo == 2) {
-                    System.out.println("Àrea:");
-                    String area = scanner.nextLine();
-                    Supervisor supervisor = new Supervisor(nome, id, area);
-                    supController.cadastrarSupervisor(supervisor);
+                        System.out.println("Àrea:");
+                        String area = scanner.nextLine();
+                        Supervisor supervisor = new Supervisor(nome, id, area);
+                        if(supController.cadastrarSupervisor(supervisor)){
+                            System.out.println("Cadastrado com sucesso!");
+                        }else {
+                            System.out.println("Não foi possível cadastrar!");
+                        }
                     }
                     break;
                 case 2:
                     if (escolhaTipo == 1)
                         opController.listarOperadores().forEach(System.out::println);
                     else if (escolhaTipo == 2)
-                        supController.listarSuperiores().forEach(System.out::println);
+                        supController.listarSupervisores().forEach(System.out::println);
                     System.out.println("Escolha um usuário pelo id para deletar: ");
                     id = scanner.nextInt();
                     scanner.nextLine();
@@ -72,13 +76,13 @@ public class Main {
                     if (escolhaTipo == 1)
                         opController.deletarOperador(id);
                     else if (escolhaTipo == 2)
-                        supController.deletarOperador(id);
+                        supController.deletarSupervisor(id);
                     break;
                 case 3:
                     if (escolhaTipo == 1)
                         opController.listarOperadores().forEach(System.out::println);
                     else if (escolhaTipo == 2)
-                        supController.listarSuperiores().forEach(System.out::println);
+                        supController.listarSupervisores().forEach(System.out::println);
                     System.out.println("Escolha um usuário para atualizar:");
                     id = scanner.nextInt();
                     scanner.nextLine();
@@ -104,7 +108,7 @@ public class Main {
                     if (escolhaTipo == 1) {
                         opController.listarOperadores().forEach(System.out::println);
                     } else if (escolhaTipo == 2) {
-                        supController.listarSuperiores().forEach(System.out::println);
+                        supController.listarSupervisores().forEach(System.out::println);
                     }
                     break;
                 case 5:
@@ -119,5 +123,6 @@ public class Main {
                     break;
             }
         }while (opcao !=7);
+        scanner.close();
     }
 }

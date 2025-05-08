@@ -9,18 +9,18 @@ public class OperadorController {
     private OperadorDAO operadorDAO = new OperadorDAO();
 
     public List<Operador> listarOperadores(){
-        return OperadorDAO.listar();
+        return operadorDAO.listar();
     }
     public boolean cadastrarOperador(Operador operador){
         if (operador != null){
-            OperadorDAO.salvar(operador);
+            operadorDAO.salvar(operador);
             return true;
         }
         return false;
     }
     public boolean atualizarOperador(Operador operador){
         if (operador != null){
-            OperadorDAO.atualizar(operador);
+            operadorDAO.atualizar(operador);
             return true;
         }
         return false;
