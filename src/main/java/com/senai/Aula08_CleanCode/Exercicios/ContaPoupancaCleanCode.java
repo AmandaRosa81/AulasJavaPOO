@@ -1,6 +1,6 @@
-package com.senai.Aula08_CleanCode.Exemplos;
+package com.senai.Aula08_CleanCode.Exercicios;
 
-public class ContaPoupancaCleanCode extends ContaBancariaCleanCode{
+public class ContaPoupancaCleanCode extends ContaBancariaCleanCode {
     private double taxaDeRendimento;
 
     public ContaPoupancaCleanCode(String titularDaConta, double saldoDaContaBancaria, double taxaDeRendimento) {

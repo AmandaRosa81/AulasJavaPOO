@@ -1,4 +1,4 @@
-package com.senai.Aula08_CleanCode.Exemplos;
+package com.senai.Aula08_CleanCode.Exercicios;
 
 public class Main {
     public static void main(String[] args) {

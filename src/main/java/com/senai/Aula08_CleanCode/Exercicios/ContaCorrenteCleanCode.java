@@ -1,4 +1,4 @@
-package com.senai.Aula08_CleanCode.Exemplos;
+package com.senai.Aula08_CleanCode.Exercicios;
 
 public class ContaCorrenteCleanCode extends ContaBancariaCleanCode {
     private double limiteDaConta;
