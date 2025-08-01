@@ -1,21 +1,21 @@
 package com.senai.Aula08_CleanCode.Exemplos;
 
 public class Funcoes_Pequenas_e_Bem_Definidas {
-   public void processar(int[] numeros){
-       int soma = 0;
-       int maior = Integer.MIN_VALUE;
-
-       for (int n : numeros){
-           soma += n;
-           if (n > maior){
-               maior = n;
-           }
-       }
-
-       System.out.println("Soma: " + soma);
-       System.out.println("Maior número: " + maior);
-   }
-}
+//   public void processar(int[] numeros){
+//       int soma = 0;
+//       int maior = Integer.MIN_VALUE;
+//
+//       for (int n : numeros){
+//           soma += n;
+//           if (n > maior){
+//               maior = n;
+//           }
+//       }
+//
+//       System.out.println("Soma: " + soma);
+//       System.out.println("Maior número: " + maior);
+//   }
+//}
 
 public void processar(int[] numeros){
     int soma = calcularSoma(numeros);
@@ -45,7 +45,7 @@ private int encontrarMaior(int[] numeros){
 private void exibirResultados(int soma, int maior){
     System.out.println("Soma: " + soma);
     System.out.println("Maior número: " + maior);
-}
+}}
 
 
 
