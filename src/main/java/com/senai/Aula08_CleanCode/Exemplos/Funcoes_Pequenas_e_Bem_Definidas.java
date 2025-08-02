@@ -1,6 +1,7 @@
 package com.senai.Aula08_CleanCode.Exemplos;
 
 public class Funcoes_Pequenas_e_Bem_Definidas {
+    //Com erros
 //   public void processar(int[] numeros){
 //       int soma = 0;
 //       int maior = Integer.MIN_VALUE;
@@ -17,6 +18,8 @@ public class Funcoes_Pequenas_e_Bem_Definidas {
 //   }
 //}
 
+
+    //Corrigido
 public void processar(int[] numeros){
     int soma = calcularSoma(numeros);
     int maior = encontrarMaior(numeros);
